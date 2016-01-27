@@ -110,7 +110,6 @@ return str.split("").reverse().join("");
 }
 console.log(reverseString("hello"));
 
-*/
 
 //a function that takes a number and returns the factorial of a number
 
@@ -124,4 +123,23 @@ function factorial (n) {
 } 
 
 console.log (factorial(5));
+
+*/
+
+//Write a function that takes a phrase as a string, and returns the longest word in that phrase. If the phrase contains more than one such word, return the first occurrence. 
+
+function longestWord(string) {
+    var str = string.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < str.length - 1; i++) {
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            word = str[i];
+        }
+    }
+    return word;
+}
+
+console.log(longestWord("i am the king of the entire world"));
 
