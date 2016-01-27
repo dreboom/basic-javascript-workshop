@@ -1,4 +1,8 @@
+
+
 var str = "hello";
+
+//returns the first character of a string
 
 var firstChar = function(arg) {
     return arg.charAt(0);
@@ -17,6 +21,8 @@ console.log(message);
 
 var strlength = str.length
 
+//returns the last character of a string
+
 var lastChar = function(arg) {
     return arg.charAt(strlength -1)
 }
@@ -29,8 +35,19 @@ var message2 = lastLetter + " is the last letter of " + str
 
 console.log(message2);
 
+//returns the character at a specified position
+
 var posStr = function(arg, pos) {
     return arg.charAt(pos);
 }
 
 console.log (posStr("hello", 4));
+
+// adds to numbers together - if the inputs are not numbers, but strings, it adds the letter/words together
+
+var addItUp = function(numOne, numTwo) {
+    return numOne + numTwo;
+}
+
+console.log(addItUp(5, 10));
+
