@@ -162,3 +162,15 @@ function biggest(array){
 
 console.log(biggest([10, 100, 1000, 1, 4, 6]));
 
+//Write a function that takes an array, and returns a filtered array. The filtered array should only contain the truthy values from the initial array
+
+var arr = [5, "element", 10, "the", true];
+
+var result = arr.filter(
+    function (value) {
+        return (typeof value === 'string');
+    }
+);
+
+console.log(result);
+
