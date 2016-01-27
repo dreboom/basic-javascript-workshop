@@ -102,7 +102,6 @@ var repeatStr = function(str, num) {
 
 console.log(repeatStr("hello ", 3));
 
-*/
 
 //a function that takes a string, and returns the reverse of that string.
 
@@ -110,4 +109,19 @@ function reverseString(str){
 return str.split("").reverse().join("");
 }
 console.log(reverseString("hello"));
+
+*/
+
+//a function that takes a number and returns the factorial of a number
+
+var f = [];
+function factorial (n) {
+  if (n == 0 || n == 1)
+    return 1;
+  if (f[n] > 0)
+    return f[n];
+  return f[n] = factorial(n-1) * n;
+} 
+
+console.log (factorial(5));
 
