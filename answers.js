@@ -124,7 +124,6 @@ function factorial (n) {
 
 console.log (factorial(5));
 
-*/
 
 //Write a function that takes a phrase as a string, and returns the longest word in that phrase. If the phrase contains more than one such word, return the first occurrence. 
 
@@ -142,4 +141,16 @@ function longestWord(string) {
 }
 
 console.log(longestWord("i am the king of the entire world"));
+
+*/
+
+// Write a function that takes a phrase, and returns the same phrase with every word capitalized
+
+function capitalizeEachWord(str) {
+    return str.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
+
+console.log(capitalizeEachWord("hello world"));
 
