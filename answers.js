@@ -1,4 +1,4 @@
-
+/*
 
 var str = "hello";
 
@@ -60,3 +60,34 @@ var multiplyItUp = function(numOne, numTwo) {
 
 console.log(multiplyItUp(5, 10));
 
+//Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers. If the string is ‘subtract’, return the difference. If the string is ‘mult’, return the product. If the string is ‘div’, return the ratio. Otherwise return 0.
+*/
+var twoNum = function(numOne, numTwo) {
+
+var operator = prompt ("please select add, subtract, mult, div");
+
+switch (operator) {
+    case 'add':
+        alert(parseInt(numOne) + parseInt(numTwo));
+        break;
+        
+    case 'subtract':
+        alert(parseInt(numOne) - parseInt(numTwo));
+        break;
+    
+    case 'mult':
+        alert(parseInt(numOne) * parseInt(numTwo));
+        break;
+        
+    case 'div':
+        alert(parseInt(numOne) / parseInt(numTwo));
+    break;
+    
+    default:
+        alert(0);
+    break;
+}
+}
+
+
+twoNum(10, 5)
