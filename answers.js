@@ -28,3 +28,9 @@ console.log(lastLetter);
 var message2 = lastLetter + " is the last letter of " + str
 
 console.log(message2);
+
+var posStr = function(arg, pos) {
+    return arg.charAt(pos);
+}
+
+console.log (posStr("hello", 4));
