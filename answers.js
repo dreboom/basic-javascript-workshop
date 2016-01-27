@@ -61,7 +61,7 @@ var multiplyItUp = function(numOne, numTwo) {
 console.log(multiplyItUp(5, 10));
 
 //Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers. If the string is ‘subtract’, return the difference. If the string is ‘mult’, return the product. If the string is ‘div’, return the ratio. Otherwise return 0.
-*/
+
 var twoNum = function(numOne, numTwo) {
 
 var operator = prompt ("please select add, subtract, mult, div");
@@ -91,3 +91,14 @@ switch (operator) {
 
 
 twoNum(10, 5)
+
+*/
+
+//Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs.
+
+var repeatStr = function(str, num) {
+  return(str.repeat(num));
+};
+
+console.log(repeatStr("hello ", 3));
+
