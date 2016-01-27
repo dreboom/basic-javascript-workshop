@@ -43,11 +43,20 @@ var posStr = function(arg, pos) {
 
 console.log (posStr("hello", 4));
 
-// adds to numbers together - if the inputs are not numbers, but strings, it adds the letter/words together
+// adds two numbers together - if the inputs are not numbers, but strings, it adds the letter/words together
 
 var addItUp = function(numOne, numTwo) {
     return numOne + numTwo;
 }
 
 console.log(addItUp(5, 10));
+
+
+// multiplies two numbers together - if the inputs are not numbers then you receive error message NaN
+
+var multiplyItUp = function(numOne, numTwo) {
+    return numOne * numTwo;
+}
+
+console.log(multiplyItUp(5, 10));
 
