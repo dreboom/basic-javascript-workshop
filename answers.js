@@ -154,3 +154,11 @@ function capitalizeEachWord(str) {
 
 console.log(capitalizeEachWord("hello world"));
 
+//Write a function that takes an array and returns the largest number of the array.
+
+function biggest(array){
+   return [Math.max.apply(null, array)];
+}
+
+console.log(biggest([10, 100, 1000, 1, 4, 6]));
+
