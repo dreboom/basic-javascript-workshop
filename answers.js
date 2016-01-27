@@ -92,7 +92,7 @@ switch (operator) {
 
 twoNum(10, 5)
 
-*/
+
 
 //Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs.
 
@@ -101,4 +101,13 @@ var repeatStr = function(str, num) {
 };
 
 console.log(repeatStr("hello ", 3));
+
+*/
+
+//a function that takes a string, and returns the reverse of that string.
+
+function reverseString(str){
+return str.split("").reverse().join("");
+}
+console.log(reverseString("hello"));
 
