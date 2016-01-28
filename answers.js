@@ -143,7 +143,7 @@ function longestWord(string) {
 console.log(longestWord("i am the king of the entire world"));
 
 */
-
+/**/
 // Write a function that takes a phrase, and returns the same phrase with every word capitalized
 
 function capitalizeEachWord(str) {
@@ -173,4 +173,17 @@ var result = arr.filter(
 );
 
 console.log(result);
+
+// a function that takes an array of numbers, and returns the sum of all the numbers in the array
+
+var total = 0;
+function sum(input) {
+for (var idx=0; idx< input.length; idx++) {
+    total += input[idx];
+}
+return total;
+}
+var s=sum([1,2,3,4]);
+
+console.log(s);
 
