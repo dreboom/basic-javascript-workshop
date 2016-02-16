@@ -208,7 +208,7 @@ function difference(arr1,arr2) {
   if (shallow) {  
   return r.concat.apply(r,a);  
   }   
-  for(i=0; i<a.length; i++){  
+  for(var i=0; i<a.length; i++){  
   if(a[i].constructor == Array){  
   flatten(a[i],shallow,r);  
   }else{  
